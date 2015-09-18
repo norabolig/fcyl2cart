@@ -1,0 +1,11 @@
+-gas_in       gasdens30.dat
+-gas_out      gout.dat   
+-tk_in        gasTemperature30.dat     
+-tk_out       tout.dat   
+-units        units.dat  
+-scale        scale.par  
+-param        param.par  
+-grid         cart.par   
+-amr_grid     amr_grid.inp  
+-dust_density dust_density.inp  
+-dust_tk      dust_temperature.inp  
