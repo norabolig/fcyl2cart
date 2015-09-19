@@ -12,6 +12,16 @@ and/or
 The code can be scripted using command line input to process multiple files at once.
 The density and temperature maps can easily be plotted and customized in **gnuplot**.
 
+## Make
+
+Type 
+
+>$>make
+
+To clean, type
+
+>$>make clean
+
 ## Basic Usage
 
 The code takes output from a 2D hydrodynamics simulation run by the code FARGO.  

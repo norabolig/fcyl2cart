@@ -1,3 +1,6 @@
+//
+// nora bolig
+//
 class Extrapolate3D{
   long nx,ny,nz;
   double mstar,adindx,dx,dy,dz,mu;
@@ -7,10 +10,8 @@ class Extrapolate3D{
   std::vector<double> y;
   std::vector<double> z;
 //
-// Warning.  x and y can be altered outside of the class, which is bad. 
-// I need to fix this.
 //
-
+//
   public:
 
   Extrapolate3D(){

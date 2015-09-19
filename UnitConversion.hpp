@@ -1,15 +1,6 @@
 //
-// helper functions
+// nora bolig
 //
-
-//template <class T> const T& min (const T& a, const T& b) {
-//  return (a<b)?a:b;   
-//}
-
-//template <class T> const T& max (const T& a, const T& b) {
-//  return (a>b)?a:b;   
-//}
-
 class UnitConversion {
   double m,l,t,th,v,d,s,scl;
 
