@@ -6,9 +6,9 @@ class Extrapolate3D{
   double mstar,adindx,dx,dy,dz,mu;
   std::vector< std::vector< std::vector<double> > > den3D;
   std::vector< std::vector<double > > h;
-  std::vector<double> x;
-  std::vector<double> y;
-  std::vector<double> z;
+  std::vector<double> x,xf;
+  std::vector<double> y,yf;
+  std::vector<double> z,zf;
 //
 //
 //
@@ -60,6 +60,13 @@ class Extrapolate3D{
 
     z.resize(nz);
     for(long iz = 0; iz<nz; ++iz){z[iz] = (0.5-double(nz)*0.5 + double(iz))*dz;}
+
+    xf.resize(nx+1);
+    for(long ix = 0; ix<nx+1; ++ix){xf[ix] = (-double(nx)*0.5 + double(ix))*dx;}
+    yf.resize(ny+1);
+    for(long iy = 0; iy<ny+1; ++iy){yf[iy] = (-double(ny)*0.5 + double(iy))*dy;}
+    zf.resize(nz+1);
+    for(long iz = 0; iz<nz+1; ++iz){zf[iz] = (-double(nz)*0.5 + double(iz))*dz;}
 
   }
 
@@ -172,11 +179,11 @@ class Extrapolate3D{
     myfile << "1 1 1"<<std::endl;
     myfile << nx << " " << ny << " " << nz <<std::endl;
     myfile << std::scientific;
-    for(long ix=0;ix<nx;++ix){ myfile << x[ix]*conversion << " ";}
+    for(long ix=0;ix<nx+1;++ix){ myfile << xf[ix]*conversion << " ";}
     myfile << std::endl;
-    for(long iy=0;iy<ny;++iy){ myfile << y[iy]*conversion << " ";}
+    for(long iy=0;iy<ny+1;++iy){ myfile << yf[iy]*conversion << " ";}
     myfile << std::endl;
-    for(long iz=0;iz<nz;++iz){ myfile << z[iz]*conversion << " ";}
+    for(long iz=0;iz<nz+1;++iz){ myfile << zf[iz]*conversion << " ";}
     myfile << std::endl;
     myfile.close();
   }
