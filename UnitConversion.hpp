@@ -34,9 +34,9 @@ class UnitConversion {
    }
    d /=pow(scl,3.);
    s /=pow(scl,2.);
-   l /=scl;
+   l *=scl;
    th/=scl;
-   v /=scl;
+   v *=scl;
   }
 
   void make(){

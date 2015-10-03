@@ -43,8 +43,8 @@ The following options are recognized when reading fname\_default.par. Note, the 
 *  -param    *name*      // File name for parameters file from FARGO
 *  -grid     *name*      // File name for grid setup for making rad3dmc files
 *  -amr\_grid  *name*    // File for amr\_grid.inp in rad3dmc (don't change unless you are prepared to accept the consequences
-*  -dust\_density *name* // File for dust\_density,inp in rad3dmc (don't change unless you are prepared to accept the consequences
-*  -dust\_tk    *name*   // File for dust\_temparture.inp in rad3dmc (don't change unless you are prepared to accept the consequences
+*  -dust\_density *name* // File for dust\_density.inp in rad3dmc (don't change unless you are prepared to accept the consequences
+*  -dust\_tk    *name*   // File for dust\_temparture.dat in rad3dmc (don't change unless you are prepared to accept the consequences
 
 The command line takes precedence over the list in fname\-default.par.  This allows easy scripting for different files. 
 The same options are used on the command line to change the names as used in the fname\_default.par. There are two additional 

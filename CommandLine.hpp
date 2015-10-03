@@ -19,8 +19,8 @@ class CommandLine{
     entries.insert (std::pair<std::string,std::string>("-param","param.par"))  ;
     entries.insert (std::pair<std::string,std::string>("-grid","cart.par"))  ;
     entries.insert (std::pair<std::string,std::string>("-amr_grid","amr_grid.inp"))  ;
-    entries.insert (std::pair<std::string,std::string>("-dust_density","dust_density,inp"))  ;
-    entries.insert (std::pair<std::string,std::string>("-dust_tk","dust_temperature.inp"))  ;
+    entries.insert (std::pair<std::string,std::string>("-dust_density","dust_density.inp"))  ;
+    entries.insert (std::pair<std::string,std::string>("-dust_tk","dust_temperature.dat"))  ;
     entries.insert (std::pair<std::string,std::string>("-product","both"));
     entries.insert (std::pair<std::string,std::string>("-h"," "));
   };
